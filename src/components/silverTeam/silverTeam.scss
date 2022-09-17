@@ -1,0 +1,18 @@
+.silver_team{
+    display: flex;
+    padding-top: 15px;
+    .right {
+        flex-basis: 70%;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 30%;
+    }
+}

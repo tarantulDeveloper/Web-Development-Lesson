@@ -1,0 +1,61 @@
+@use "../../global_styles/variables";
+
+.navbar {
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      border: 0.5px solid black;
+      border-radius: 2px;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  &__grid {
+    list-style: none;
+    display: grid;
+    border: 1px solid white;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.34);
+    grid-template-columns: repeat(5, 1fr) 2fr;
+    background: linear-gradient(
+      180deg,
+      rgba(254, 254, 254, 1) 0%,
+      rgba(209, 208, 206, 1) 100%
+    );
+    color: variables.$title-color;
+    gap: 1px;
+
+    :last-child {
+      border-right: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    li {
+      text-align: center;
+      padding: 7px;
+      color: blue;
+      width: 100%;
+      border-right: 1px solid white;
+      -webkit-box-shadow: 3px 0px 2px -1px rgba(0, 0, 0, 0.09);
+      box-shadow: 3px 0px 2px -1px rgba(0, 0, 0, 0.09);
+    }
+  }
+}
