@@ -42,4 +42,15 @@ const latestUpdates = [
     }
 ];
 
-export {greenCardData, latestUpdates};
+const doneText = [
+    {
+        id: 1,
+        text: "Lorem ipsum dolor sit amet came!"
+    },
+    {
+        id:2,
+        text: "Lorem ipsum dolor sit, amet consectetur adipisicing!"
+    }
+]
+
+export {greenCardData, latestUpdates, doneText};
