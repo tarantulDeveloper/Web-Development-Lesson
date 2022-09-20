@@ -57,5 +57,14 @@
       -webkit-box-shadow: 3px 0px 2px -1px rgba(0, 0, 0, 0.09);
       box-shadow: 3px 0px 2px -1px rgba(0, 0, 0, 0.09);
     }
+
+    a {
+      text-decoration: none;
+    }
+
+    a.active {
+      color: red;
+      font-weight: bold;
+    }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.scss";
 import logo from "../../images/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,15 +12,20 @@ const Navbar = () => {
           <input type="text" placeholder="Search" />
         </div>
       </div>
-      
-        <ul className="navbar__grid">
-          <li>Home</li>
-          <li>Latest News</li>
-          <li>Portfolio</li>
-          <li>About Us</li>
-          <li className="last">Contact</li>
-        </ul>
-      
+
+      <ul className="navbar__grid">
+        <li>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
+        </li>
+        <li>Latest News</li>
+        <li>Portfolio</li>
+        <li>
+          <NavLink to="/about-us">About Us</NavLink>
+        </li>
+        <li className="last">Contact</li>
+      </ul>
     </div>
   );
 };
