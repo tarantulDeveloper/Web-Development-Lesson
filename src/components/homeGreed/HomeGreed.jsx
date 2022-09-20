@@ -4,6 +4,7 @@ import {latestUpdates, doneText} from '../../data/data';
 import Images from '../../data/images';
 import Bean from "../bean/Bean";
 import './homeGreed.scss';
+import MyButton from "../button/MyButton";
 
 const HomeGreed = () => {
   const [dones, setDones] = useState([1, 2, 3, 4, 5]);
@@ -60,10 +61,10 @@ const HomeGreed = () => {
       </div>
       <div className="bottom_btns">
         <div>
-          <button className="view_all">View All</button>
+          <MyButton text="View All" />
         </div>
         <div>
-          <button className="view_all">More</button>
+          <MyButton text="More"/>
         </div>
       </div>
     </div>
