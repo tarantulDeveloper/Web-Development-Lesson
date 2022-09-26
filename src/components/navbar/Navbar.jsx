@@ -19,12 +19,16 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li>Latest News</li>
-        <li>Portfolio</li>
+        <li>
+          <NavLink to="/latest-news">Latest News</NavLink>
+        </li>
+        <li><NavLink to="/portfolio">Portfolio</NavLink></li>
         <li>
           <NavLink to="/about-us">About Us</NavLink>
         </li>
-        <li className="last">Contact</li>
+        <li className="last">
+          <NavLink to="/contact">Contact</NavLink>
+        </li>
       </ul>
     </div>
   );

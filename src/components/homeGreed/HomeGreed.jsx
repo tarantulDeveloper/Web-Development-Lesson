@@ -5,6 +5,7 @@ import Images from '../../data/images';
 import Bean from "../bean/Bean";
 import './homeGreed.scss';
 import MyButton from "../button/MyButton";
+import BorderedImage from "../borderedImage/BorderedImage";
 
 const HomeGreed = () => {
   const [dones, setDones] = useState([1, 2, 3, 4, 5]);

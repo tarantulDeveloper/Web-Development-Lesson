@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import "./home.scss";
+import styles from  "./Home.module.scss";
 import GreenCard from "../../components/greanCard/GreenCard";
 import SilverTeam from "../../components/silverTeam/SilverTeam";
 import { greenCardData} from "../../data/data.js";
@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <Navbar />
       <SilverTeam />
-      <div className="greenContent">
+      <div className={styles.greenContent}>
         {greenCardData.map((data) => (
           <GreenCard title={data.title} text={data.text} key={data.id} />
         ))}

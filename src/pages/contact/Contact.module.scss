@@ -1,0 +1,58 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    
+    form {
+      input {
+        width: 100%;
+        margin-top: 5px;
+      }
+      
+      textarea {
+        width: 100%;
+        margin-top: 5px;
+        height: 200px;
+      }
+      
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .left {
+    img {
+      border: 1px solid rgb(54, 53, 53);
+    }
+  }
+}
+
+p {
+  line-height: 1.2;
+}
+
+h3 {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h4 {
+  font-weight: 550;
+  padding-bottom: 5px;
+}
+
+h2 {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}

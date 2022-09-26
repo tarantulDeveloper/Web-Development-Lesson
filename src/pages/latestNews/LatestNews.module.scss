@@ -1,0 +1,46 @@
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 25px;
+  padding-top: 40px;
+
+  .left {
+    .up_p {
+      padding-top: 10px;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    .categories {
+      .content {
+        padding-left: 15px;
+      }
+    }
+
+    .ourNews {
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .right_bottom {
+      p {
+        padding: 0 10px;
+      }
+
+      .steven {
+        color: #64a2ad;
+      }
+    }
+  }
+}
+
+.button {
+  width: max-content;
+  float: right;
+}
